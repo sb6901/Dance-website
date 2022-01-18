@@ -1,0 +1,43 @@
+extends base.pug
+
+
+block scripts 
+    script(src="/static/index.js")
+block style 
+     style 
+            include ../static/style.css 
+block content 
+    section#intro 
+        div Welcome to The Dance School 
+        div.small Eat Sleep Dance Repeat
+
+    section#mission
+        h2 Our Mission 
+        div.card
+            h3 Anybody Can Dance 
+            div.cardbox
+                div.cardimg
+                    img(src="/static/img/5.jpg", alt="")
+        div.card
+            h3 Dance Your Heart Out
+             div.cardbox
+                div.cardimg
+                    img(src="/static/img/8.jpg", alt="")
+        div.card
+            h3 Expert Training
+             div.cardbox
+                div.cardimg
+                    img(src="/static/img/7.jpg", alt="")
+
+    section#sponsor 
+        h2 Our sponsors
+        div#sp
+            
+            a(href="https://www.apple.com/" target="_blank")
+                img(src="/static/img/apple.jpg", alt="" class="spimg") 
+            a(href="https://www.dell.com/en-in" target="_blank")
+                img(src="/static/img/dell.png", alt="" class="spimg")
+            a(href="https://about.google/products/" target="_blank")
+                img(src="/static/img/google.jpg", alt="" class="spimg")
+            a(href="https://news.samsung.com/global/" target="_blank")
+                img(src="/static/img/sam.png", alt="" class="spimg")
